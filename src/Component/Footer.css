@@ -1,0 +1,76 @@
+.footer{
+    background-color: rgb(9, 10, 9);
+    color: white;
+    padding-top: 40px;
+
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        justify-content: center;
+        border-bottom: solid white 3px;
+        padding-bottom: 25px;
+
+        .one .si{
+            display: flex;
+            .logo{
+            width: 100px;
+            height: 10vh;
+            background-image: url(../assets/ann.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            
+        }
+        .name{
+            h2{
+                margin-bottom: 0;
+                color: green;
+            }
+            p{
+                margin-top: 0;
+            }
+        }
+        }
+
+        .two, .three{
+            h1{
+                font-size: 2rem;
+            }
+           .link {
+            text-decoration: none;
+            color: white;
+            p{
+                font-size: 1.1rem;
+                margin-top: 15px;
+                transition: 0.2s ease-in-out;
+                
+                &:hover{
+                    color: green;
+                }
+            }}
+            p{
+                font-size: 1.1rem;
+                margin-top: 15px;
+                transition: 0.2s ease-in-out;
+                
+                &:hover{
+                    color: green;
+                }
+            }
+        }
+    }
+
+
+    .nom{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        column-gap: 20px;
+
+        .p{
+            color: green;
+        }
+    }
+}
+
