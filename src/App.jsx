@@ -14,6 +14,8 @@ import Signup from "./Tools/Signup.jsx"
 import Edituser from './Tools/Edituser.jsx'
 import Payments from './Tools/Payment.jsx'
 
+
+const App = () => {
 function App() {
   return (
     <>
