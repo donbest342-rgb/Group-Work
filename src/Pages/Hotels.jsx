@@ -256,7 +256,7 @@ export default function HotelsPage({ onNavigate = () => {} }) {
             <Grid container spacing={2}>
               {sorted.map((hotel) => (
                 <Grid key={hotel.id} item xs={12} sm={6} md={6}>
-                  <Card sx={{ height: 440, display: "flex", flexDirection: "column", width: "100%" }}>
+                  <Card sx={{ height: 440, display: "flex", flexDirection: "column", maxWidth: '320', minWidth: '280' }}>
                     <ImageWithFallback src={hotel.image} alt={hotel.name} sx={{ height: 200, objectFit: "cover" }} />
 
                     <CardContent sx={{ flexGrow: 1, minHeight: 140 }}>
