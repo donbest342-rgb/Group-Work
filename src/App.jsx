@@ -7,6 +7,7 @@ import Travelguide from "./Pages/Travelguide.jsx"
 import Nav from "./Component/Nav.jsx"
 import Footer from "./Component/Footer.jsx"
 
+
 const App = () => {
   return (
     <div>
