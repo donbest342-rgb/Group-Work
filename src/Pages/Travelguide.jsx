@@ -9,6 +9,11 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SunnyIcon from '@mui/icons-material/Sunny';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
+import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 const Travelguide = () => {
     const [activeTab, setActiveTab] = useState("Essentials");
@@ -108,6 +113,7 @@ const Travelguide = () => {
           <div>
             <h2>Regions</h2>
             <p>Content for regions</p>
+            {/* <Hotels/> */}
           </div>
         )}
 
@@ -231,44 +237,58 @@ const Travelguide = () => {
         {activeTab === "P. Tips" && (
           <div>
           <div className='p-tips'>
-            <div className='e-2'>
-            <div className='e-2-top'>
-              <WarningAmberIcon />
-              <h2>Important Information</h2>
+            <div className='p-box'>
+              <div className='p-info'>
+                  <div className='p-title'>
+                    <AirportShuttleIcon className='p-img'/>
+                    <h3>Transportation</h3>
+                  </div>
+                <ol>Trains are scenic and affordable for long distances</ol>
+                <ol>Tuk-tuks are great for short distances - always negotiate</ol>
+                <ol>Private drivers offer flexibility for sightseeing</ol>
+                <ol>Public buses are cheap but can be crowded</ol>
+              </div>
             </div>
-            <div className='e-2-info'>
-              <h3>Embassy Contacts</h3>
-              <p>Contact your embassy in case of lost passport or documents.</p>
-              <ol>US Embassy Colombo: +94 11 249 8500</ol>
-              <ol>Uk Embassy Colombo: +94 11 539 0639</ol>
-              <ol>Australian Embassy: +94 11 539 0695</ol>
-            </div>
-            <div className='e-2-info'>
-              <h3>Health Facilities</h3>
-              <ol>Apollo Hospital Colombo (Private)</ol>
-              <ol>Asiri Medical Hospital (Private)</ol>
-              <ol>General Hospital Colombo (Public)</ol>
-            </div>
-          </div>
-          <div className='e-2'>
-            <div className='e-2-top'>
-              <WarningAmberIcon />
-              <h2>Important Information</h2>
-            </div>
-            <div className='e-2-info'>
-              <h3>Embassy Contacts</h3>
-              <p>Contact your embassy in case of lost passport or documents.</p>
-              <ol>US Embassy Colombo: +94 11 249 8500</ol>
-              <ol>Uk Embassy Colombo: +94 11 539 0639</ol>
-              <ol>Australian Embassy: +94 11 539 0695</ol>
-            </div>
-            <div className='e-2-info'>
-              <h3>Health Facilities</h3>
-              <ol>Apollo Hospital Colombo (Private)</ol>
-              <ol>Asiri Medical Hospital (Private)</ol>
-              <ol>General Hospital Colombo (Public)</ol>
+            <div className='p-box'>
+              <div className='p-info'>
+                  <div className='p-title'>
+                    <HealthAndSafetyIcon className='p-img'/>
+                    <h3>Health & safety</h3>
+                  </div>
+                <ol>Drink bottled water to avoid stomach issues</ol>
+                <ol>Use mosquito repellent, especially in tropical areas</ol>
+                <ol>Sun protection is essential - strong UV ray</ol>
+                <ol>Travel insurance highly recommended</ol>
+              </div>
             </div>
           </div>
+
+          <div className='p-tips'>
+            <div className='p-box'>
+              <div className='p-info'>
+                  <div className='p-title'>
+                    <FavoriteBorderIcon className='p-img'/>
+                    <h3>Cultural Etiquette</h3>
+                  </div>
+                <ol>Apollo Hospital Colombo (Private)</ol>
+                <ol>Asiri Medical Hospital (Private)</ol>
+                <ol>General Hospital Colombo (Public)</ol>
+                <ol>General Hospital Colombo (Public)</ol>
+              </div>
+            </div>
+
+            <div className='p-box'>
+              <div className='p-info'>
+                  <div className='p-title'>
+                    <RestaurantIcon className='p-img'/>
+                    <h3>Food & Dining</h3>
+                  </div>
+                <ol>Apollo Hospital Colombo (Private)</ol>
+                <ol>Asiri Medical Hospital (Private)</ol>
+                <ol>General Hospital Colombo (Public)</ol>
+                <ol>General Hospital Colombo (Public)</ol>
+              </div>
+            </div>
           </div>
           <section className='buttons'>
               <button className='green-but'>Start Planning Your Trip</button>
@@ -304,7 +324,7 @@ const Travelguide = () => {
           </div>
           <div className='e-2'>
             <div className='e-2-top'>
-              <WarningAmberIcon />
+              <ErrorOutlineIcon />
               <h2>Important Information</h2>
             </div>
             <div className='e-2-info'>
